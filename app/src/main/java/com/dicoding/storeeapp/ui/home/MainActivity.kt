@@ -2,6 +2,9 @@ package com.dicoding.storeeapp.ui.home
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.Settings
+import android.view.Menu
+import android.view.MenuItem
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +12,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.dicoding.storeeapp.R
 import com.dicoding.storeeapp.data.DefaultResponse
 import com.dicoding.storeeapp.databinding.ActivityMainBinding
 import com.dicoding.storeeapp.ui.home.adapter.StoryAdapter
@@ -55,6 +59,29 @@ class MainActivity : AppCompatActivity() {
             adapter = storyAdapter
             layoutManager = LinearLayoutManager(this@MainActivity)
             setHasFixedSize(true)
+        }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.home_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.settings -> {
+                startActivity(Intent(Settings.ACTION_LOCALE_SETTINGS))
+                true
+            }
+            R.id.logout -> {
+                mainViewModel.logout()
+                val intent = Intent(this@MainActivity, LoginActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+                true
+            }
+            else -> true
         }
     }
 

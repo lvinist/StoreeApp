@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StoreeApp">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.postimage.PostImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.detail.DetailStoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

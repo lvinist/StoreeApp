@@ -14,8 +14,10 @@ import com.dicoding.storeeapp.databinding.ActivityLoginBinding
 import com.dicoding.storeeapp.ui.home.MainActivity
 import com.dicoding.storeeapp.utils.Utils.isValidEmail
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 
 @AndroidEntryPoint
+@ExperimentalCoroutinesApi
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding

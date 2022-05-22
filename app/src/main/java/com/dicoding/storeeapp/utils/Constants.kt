@@ -6,4 +6,5 @@ object Constants {
     const val NETWORK_LOAD_SIZE = 20
     const val LOGIN_DATASTORE = "login_datastore"
     const val LOGIN_TOKEN = "login_token"
+    const val POST_STORY_RESPONSE = "post_story_response"
 }

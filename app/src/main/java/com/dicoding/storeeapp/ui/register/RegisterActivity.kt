@@ -10,12 +10,15 @@ import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.lifecycleScope
 import com.dicoding.storeeapp.data.user.Register
 import com.dicoding.storeeapp.databinding.ActivityRegisterBinding
+import com.dicoding.storeeapp.ui.login.LoginActivity
 import com.dicoding.storeeapp.utils.Constants.REGISTER_RESPONSE
 import com.dicoding.storeeapp.utils.Utils.isValidEmail
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
+@ExperimentalCoroutinesApi
 class RegisterActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRegisterBinding
@@ -30,6 +33,13 @@ class RegisterActivity : AppCompatActivity() {
         setButtonShouldEnabled()
         setSubmitButton()
         observeResponse()
+        signinTextClickListener()
+    }
+
+    private fun signinTextClickListener() {
+        binding.tvSigninIntent.setOnClickListener{
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
     }
 
     private fun setButtonShouldEnabled() {

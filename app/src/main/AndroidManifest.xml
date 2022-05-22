@@ -22,7 +22,6 @@
         </intent>
     </queries>
 
-
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -31,6 +30,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StoreeApp">
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.postimage.CameraActivity"
             android:exported="false" />

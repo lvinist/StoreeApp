@@ -19,4 +19,7 @@
     <string name="err_take_picture">Failed to Take Picture</string>
     <string name="err_fail_camera">Failed to Show Camera</string>
     <string name="error_no_permission">Permission is Not Granted</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name_hint">Name</string>
+    <string name="hint_signin">Have account?</string>
 </resources>

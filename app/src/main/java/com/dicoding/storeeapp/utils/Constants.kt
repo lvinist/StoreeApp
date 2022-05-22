@@ -8,4 +8,5 @@ object Constants {
     const val LOGIN_TOKEN = "login_token"
     const val POST_STORY_RESPONSE = "post_story_response"
     const val FILENAME_FORMAT = "dd-MMM-yyyy"
+    const val REGISTER_RESPONSE = "register_response"
 }

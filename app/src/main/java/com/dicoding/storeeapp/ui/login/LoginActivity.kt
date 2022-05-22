@@ -12,6 +12,7 @@ import com.dicoding.storeeapp.R
 import com.dicoding.storeeapp.data.user.Login
 import com.dicoding.storeeapp.databinding.ActivityLoginBinding
 import com.dicoding.storeeapp.ui.home.MainActivity
+import com.dicoding.storeeapp.ui.register.RegisterActivity
 import com.dicoding.storeeapp.utils.Utils.isValidEmail
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -32,6 +33,13 @@ class LoginActivity : AppCompatActivity() {
         observeLoginResponse()
         setEnableSigninButton()
         signinButtonClickListener()
+        signupTextClickListener()
+    }
+
+    private fun signupTextClickListener() {
+        binding.tvSignupIntent.setOnClickListener{
+            startActivity(Intent(this, RegisterActivity::class.java))
+        }
     }
 
     private fun observeLoginResponse() {

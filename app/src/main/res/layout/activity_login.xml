@@ -30,11 +30,11 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/email"
             app:startIconDrawable="@drawable/ic_baseline_email_24">
 
             <com.dicoding.storeeapp.ui.components.EmailEditText
                 android:id="@+id/tv_email"
+                android:hint="@string/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp" />
@@ -44,12 +44,12 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/password"
             app:endIconMode="password_toggle"
             app:startIconDrawable="@drawable/ic_baseline_lock_24">
 
             <com.dicoding.storeeapp.ui.components.PasswordEditText
                 android:id="@+id/tv_password"
+                android:hint="@string/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"

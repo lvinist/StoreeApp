@@ -7,4 +7,5 @@ object Constants {
     const val LOGIN_DATASTORE = "login_datastore"
     const val LOGIN_TOKEN = "login_token"
     const val POST_STORY_RESPONSE = "post_story_response"
+    const val FILENAME_FORMAT = "dd-MMM-yyyy"
 }

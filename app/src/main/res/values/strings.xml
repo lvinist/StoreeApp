@@ -16,4 +16,7 @@
     <string name="add_description_hint">Add description here</string>
     <string name="upload">Upload</string>
     <string name="null_response">LoginResponse is null</string>
+    <string name="err_take_picture">Failed to Take Picture</string>
+    <string name="err_fail_camera">Failed to Show Camera</string>
+    <string name="error_no_permission">Permission is Not Granted</string>
 </resources>

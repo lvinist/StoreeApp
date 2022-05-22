@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">StoreeApp</string>
+    <string name="error_invalid_email">Wrong Email Format</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="hint_to_signup">Don\'t have account?</string>
+    <string name="sign_up_intent">sign up</string>
+    <string name="empty_data">Sorry, there\'s no photo right now</string>
+    <string name="photo_name">Author</string>
+    <string name="description">Description here</string>
+    <string name="date">Uploaded on %1$s</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="add_description_hint">Add description here</string>
+    <string name="upload">Upload</string>
+    <string name="null_response">LoginResponse is null</string>
+    <string name="err_take_picture">Failed to Take Picture</string>
+    <string name="err_fail_camera">Failed to Show Camera</string>
+    <string name="error_no_permission">Permission is Not Granted</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name_hint">Name</string>
+    <string name="hint_signin">Have account?</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
 </resources>

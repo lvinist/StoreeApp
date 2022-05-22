@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StoreeApp</string>
+    <string name="error_invalid_email">Format Surel Salah</string>
+    <string name="login">Masuk</string>
+    <string name="email">Surel</string>
+    <string name="password">Kata Sandi</string>
+    <string name="sign_in">Masuk</string>
+    <string name="hint_to_signup">Tidak punya akun?</string>
+    <string name="sign_up_intent">Daftar</string>
+    <string name="empty_data">Maaf, tidak ada foto saat ini.</string>
+    <string name="photo_name">Pencipta</string>
+    <string name="description">Deskripsi</string>
+    <string name="date">Diunggah pada %1$s</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="add_description_hint">Tambahkan deskripsi disini</string>
+    <string name="upload">Unggah</string>
+    <string name="null_response">LoginResponse is null</string>
+    <string name="err_take_picture">Gagal mengambil gambar</string>
+    <string name="err_fail_camera">Gagal membuka kamera</string>
+    <string name="error_no_permission">Izin tidak diberikan</string>
+    <string name="sign_up">Daftar</string>
+    <string name="name_hint">Nama</string>
+    <string name="hint_signin">Punya akun?</string>
+    <string name="settings">Pengaturan</string>
+    <string name="logout">Keluar</string>
+</resources>

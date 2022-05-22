@@ -15,4 +15,5 @@
     <string name="gallery">Gallery</string>
     <string name="add_description_hint">Add description here</string>
     <string name="upload">Upload</string>
+    <string name="null_response">LoginResponse is null</string>
 </resources>

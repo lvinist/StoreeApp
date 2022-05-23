@@ -17,6 +17,7 @@ import com.dicoding.storeeapp.data.DefaultResponse
 import com.dicoding.storeeapp.databinding.ActivityMainBinding
 import com.dicoding.storeeapp.ui.home.adapter.StoryAdapter
 import com.dicoding.storeeapp.ui.login.LoginActivity
+import com.dicoding.storeeapp.ui.maps.MapsActivity
 import com.dicoding.storeeapp.ui.postimage.PostImageActivity
 import com.dicoding.storeeapp.utils.Constants.POST_STORY_RESPONSE
 import dagger.hilt.android.AndroidEntryPoint
@@ -79,6 +80,10 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this@MainActivity, LoginActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(intent)
+                true
+            }
+            R.id.to_map -> {
+                startActivity(Intent(this@MainActivity, MapsActivity::class.java))
                 true
             }
             else -> true

@@ -6,6 +6,7 @@ import androidx.paging.PagingData
 import com.dicoding.storeeapp.data.DefaultResponse
 import com.dicoding.storeeapp.data.paging.StoryPagingSource
 import com.dicoding.storeeapp.data.story.Story
+import com.dicoding.storeeapp.data.story.StoryResponse
 import com.dicoding.storeeapp.di.api.ApiService
 import com.dicoding.storeeapp.utils.Constants.NETWORK_LOAD_SIZE
 import kotlinx.coroutines.flow.Flow
@@ -35,4 +36,12 @@ class StoryRepositoryImpl @Inject constructor(private val apiService: ApiService
             )
         }
     ).flow
+
+    override suspend fun getStoriesWithTokenAndLocation(token: String): StoryResponse<Story> =
+        try {
+            val response = apiService.getStoriesWithLocation(token = "Bearer $token")
+            response
+        } catch (e: Exception) {
+            StoryResponse(error = true, message = e.localizedMessage.toString(), emptyList())
+        }
 }

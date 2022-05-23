@@ -3,6 +3,7 @@ package com.dicoding.storeeapp.di.repository.story
 import androidx.paging.PagingData
 import com.dicoding.storeeapp.data.DefaultResponse
 import com.dicoding.storeeapp.data.story.Story
+import com.dicoding.storeeapp.data.story.StoryResponse
 import kotlinx.coroutines.flow.Flow
 import okhttp3.MultipartBody
 
@@ -15,4 +16,7 @@ interface StoryRepository {
     ): DefaultResponse
 
     fun getStoriesWithToken(token: String): Flow<PagingData<Story>>
+
+    suspend fun getStoriesWithTokenAndLocation(token: String): StoryResponse<Story>
+
 }

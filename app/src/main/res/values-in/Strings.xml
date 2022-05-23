@@ -25,4 +25,10 @@
     <string name="hint_signin">Punya akun?</string>
     <string name="settings">Pengaturan</string>
     <string name="logout">Keluar</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="normal_type">Normal</string>
+    <string name="satellite_type">Satelit</string>
+    <string name="terrain_type">Permukaan</string>
+    <string name="hybrid_type">Hibrida</string>
+    <string name="map">Peta</string>
 </resources>
